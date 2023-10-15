@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Information</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Student Information</h1>
+  <form id="student-form">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="surname" placeholder="Surname" required>
+    <input type="text" id="rollno" placeholder="Roll No" required unique>
+    <input type="text" id="city" placeholder="City" required>
+    <button type="submit">Add Student</button>
+  </form>
+  <div id="student-list">
+    <table id="student-table">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Student Surname</th>
+          <th>Roll No</th>
+          <th>City</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  
+
+
+
+
+  
+  <script src="frontend.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+/* Style for the table */
+#student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style for table header (th) */
+#student-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+/* Style for table rows (td) */
+#student-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Style for buttons in the table */
+.delete-button,
+.update-button {
+  background-color: #f44336; /* Red color for delete button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.update-button {
+  background-color: #008CBA; /* Blue color for update button */
+}
+
+/* Hover effect for buttons */
+.delete-button:hover,
+.update-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive table style (optional) */
+@media screen and (max-width: 600px) {
+  #student-table {
+    border: 0;
+  }
+
+  #student-table thead {
+    display: none;
+  }
+
+  #student-table tr {
+    margin-bottom: 20px;
+    display: block;
+    border: 1px solid #ddd;
+  }
+
+  #student-table td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  #student-table td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label);
+  }
+}
